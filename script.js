@@ -1,4 +1,4 @@
-// ===== Mobile Menu Toggle =====
+
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
@@ -8,7 +8,7 @@ hamburger.addEventListener('click', () => {
     document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
 });
 
-// Close mobile menu when clicking a link
+
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -17,7 +17,7 @@ navLinks.querySelectorAll('a').forEach(link => {
     });
 });
 
-// ===== Active Nav Link on Scroll =====
+
 const sections = document.querySelectorAll('section[id]');
 const navItems = document.querySelectorAll('.nav-links a');
 
@@ -43,7 +43,7 @@ function setActiveNav() {
 
 window.addEventListener('scroll', setActiveNav);
 
-// ===== Scroll Reveal Animation =====
+
 const revealElements = document.querySelectorAll(
     '.about, .services, .why-us, .portfolio, .contact, .section-title, .service-card, .project-card, .feature, .stat-card, .contact-item'
 );
@@ -65,7 +65,7 @@ revealElements.forEach(el => {
     revealObserver.observe(el);
 });
 
-// ===== Navbar Background on Scroll =====
+
 const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
@@ -76,7 +76,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ===== Contact Form Handling =====
+
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', (e) => {
@@ -88,7 +88,7 @@ contactForm.addEventListener('submit', (e) => {
     btn.textContent = 'Sending...';
     btn.disabled = true;
 
-    // Simulate form submission
+
     setTimeout(() => {
         btn.textContent = 'Message Sent!';
         btn.style.background = '#4CAF50';
@@ -102,7 +102,7 @@ contactForm.addEventListener('submit', (e) => {
     }, 1500);
 });
 
-// ===== Smooth Scroll for Anchor Links =====
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
