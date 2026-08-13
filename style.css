@@ -1,4 +1,4 @@
-/* ===== CSS Variables ===== */
+
 :root {
     --primary: #c9a96e;
     --primary-dark: #b8945f;
@@ -15,7 +15,7 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ===== Reset & Base ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +45,6 @@ a {
     color: inherit;
 }
 
-/* ===== Header & Navbar ===== */
 header {
     position: fixed;
     top: 0;
@@ -115,7 +114,7 @@ header {
     width: 100%;
 }
 
-/* Hamburger */
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -145,7 +144,7 @@ header {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* ===== Hero Section ===== */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -236,7 +235,7 @@ header {
     height: 500px;
 }
 
-/* ===== Section Title ===== */
+
 .section-title {
     text-align: center;
     max-width: 600px;
@@ -267,7 +266,7 @@ header {
     font-size: 1.05rem;
 }
 
-/* ===== About Section ===== */
+
 .about {
     display: flex;
     align-items: center;
@@ -352,7 +351,7 @@ header {
     margin: 0;
 }
 
-/* ===== Services Section ===== */
+
 .services {
     background: var(--light);
     padding: 6rem 2rem;
@@ -404,7 +403,6 @@ header {
     line-height: 1.7;
 }
 
-/* ===== Why Us Section ===== */
 .why-us {
     display: flex;
     align-items: center;
@@ -489,7 +487,7 @@ header {
     line-height: 1.6;
 }
 
-/* ===== Portfolio Section ===== */
+
 .portfolio {
     background: var(--light);
     padding: 6rem 2rem;
@@ -551,7 +549,7 @@ header {
     opacity: 0.9;
 }
 
-/* ===== Contact Section ===== */
+
 .contact {
     padding: 6rem 2rem;
     max-width: 1200px;
@@ -725,7 +723,7 @@ header {
     font-size: 0.9rem;
 }
 
-/* ===== Animations ===== */
+
 @keyframes fadeInLeft {
     from {
         opacity: 0;
